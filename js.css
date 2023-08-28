@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-size: 20px;
+    color: white;
+}
+
+div.principal {
+    background: radial-gradient( farthest-corner at 250px 1px , hsla(216, 12%, 54%, 0.379), hsl(213, 19%, 18% )30%) ;
+    width: 500px;
+    height: 500px;
+    margin: 220px auto;
+    border-radius: 30px;
+    box-shadow: inset 1px 1px 5px black;
+}
+
+h2 {
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+p.texto {
+   padding: 30px;
+   line-height: 1.3em;
+} 
+
+span {
+    margin-left: 70px;
+    background-color: aquamarine;
+}
+
+
+svg {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+path.icons {
+    transform: scale(1.5);
+    background-color: rgba(0, 0, 0, 0.423);
+    width: 120px;
+    height: 120px;
+}
+
+div.estrela {
+    background-color: rgba(0, 0, 0, 0.29);
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    margin: 30px;
+}   
