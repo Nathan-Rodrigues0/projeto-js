@@ -8,16 +8,16 @@
 body {
     background-color: hsl(216, 12%, 8%);
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 div.principal {
-    background: radial-gradient( farthest-corner at 250px 1px , hsla(216, 12%, 54%, 0.379), hsl(213, 19%, 18% )30%) ;
+    background: radial-gradient( farthest-corner at 250px 1px , hsla(216, 12%, 54%, 0.379), hsl(213, 19%, 18% )30%), hsl(216, 12%, 8%) ;
     width: 500px;
-    height: 500px;
+    height: 550px;
     margin: 220px auto;
     border-radius: 30px;
-    box-shadow: inset 1px 1px 5px black;
 }
 
 h2 {
@@ -29,13 +29,44 @@ h2 {
 p.texto {
    padding: 30px;
    line-height: 1.3em;
+   color: rgba(244, 244, 244, 0.698);
 } 
 
-span {
-    margin-left: 70px;
-    background-color: aquamarine;
+p.enviar {
+    background-color:hsl(25, 97%, 53%);
+    margin: 45px auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 400px; 
+    height: 40px;
+    border-radius: 40px;
+    font-size: 19px;
 }
 
+p.enviar:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+span {
+    margin-left: 22px;
+    margin-top: 25px;
+    display: inline-block;
+    background-color:  rgba(255, 255, 255, 0.089);
+    color: rgba(244, 244, 244, 0.698);
+    width: 70px;
+    height: 47px;
+    padding-top: 22px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+span:hover {
+    background-color: rgba(240, 248, 255, 0.446);
+    color:  white;
+    cursor: pointer;
+}
 
 svg {
     width: 300px;
@@ -47,13 +78,13 @@ svg {
 
 path.icons {
     transform: scale(1.5);
-    background-color: rgba(0, 0, 0, 0.423);
+    background-color: rgb(73, 73, 73);
     width: 120px;
     height: 120px;
 }
 
 div.estrela {
-    background-color: rgba(0, 0, 0, 0.29);
+    background-color: rgba(255, 255, 255, 0.089);
     border-radius: 50px;
     width: 65px;
     height: 65px;
