@@ -68,6 +68,10 @@ span:hover {
     cursor: pointer;
 }
 
+span:active {
+    background-color:  hsl(25, 97%, 53%);
+}
+
 svg {
     width: 300px;
     height: 100px;
