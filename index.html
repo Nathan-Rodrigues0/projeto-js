@@ -2,22 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="js.css">
+  <script src="script.js"></script>
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
   <div class="principal">
 <div class="estrela">
   </div>
@@ -33,31 +28,56 @@
       to help us improve our offering!
     </p>
 
-    <p onclick="numeros()">
-        <span name="span">1</span>
-        <span name="span">2</span> 
-        <span name="span">3</span> 
-        <span name="span">4</span> 
-        <span name="span">5</span>
-    </p>
+    <div class="numeros" onclick="numeros()">
+     
+     <label class="lb1" for="n1">
+        <div class="num1">
+          <input type="checkbox" id="n1">1
+        </div> 
+     </label>   
+
+        <label for="n2">
+          <div class="num2">
+            <input type="checkbox" id="n2">2
+          </div>
+        </label> 
+
+        <label for="n3">
+          <div class="num3">
+            <input type="checkbox" id="n3">3
+          </div>
+        </label> 
+
+        <label for="n4">
+          <div class="num4">
+            <input type="checkbox" id="n4">4
+          </div>
+        </label>
+
+        <label for="n5">
+          <div class="num5">
+            <input type="checkbox" id="n5">5
+          </div>
+        </label>
+    </div>
 
     <p class="enviar" onclick="enviar()">S U B M I T</p>
    </div>
+
+    <!--<div class="thanks nodisplay">
+    <div class="icon"></div>
+    <div class="selection">You selected Add rating here  out of 5</div>
+  
+    <h1>Thank you!</h1>
+  
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don't hesitate to get in touch!</p>
+  </div>-->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Nathan-Rodrigues0" target="_blank">Nathan Rodrigues</a>.
   </div>
-  <script src="script.js"></script>
+  
 </body>
-<!-- Rating state end -->
-    <!-- Thank you state start -->
-   <!-- You selected  Add rating here out of 5--> 
-   <!-- Thank you!
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don't hesitate to get in touch!-->
- 
-
-  <!-- Thank you state end -->
-
 </html>
