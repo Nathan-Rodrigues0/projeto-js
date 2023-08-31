@@ -68,13 +68,18 @@ div.num:hover {
     cursor: pointer;
 }
 
-input:checked + .num {
-    background-color: hsl(25, 97%, 53%);
-    color: blueviolet;
+div.num:active {
+    background-color:  hsl(25, 97%, 53%);
 }
 
+input[type="checkbox"]:checked{
+    display: none;
+    background-color:  hsl(25, 97%, 53%);
+}
 
-
+input {
+    dislay: none;
+}
 
 svg {
     width: 300px;
