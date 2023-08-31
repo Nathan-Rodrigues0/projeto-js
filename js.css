@@ -49,7 +49,7 @@ p.enviar:hover {
     cursor: pointer;
 }
 
-div.num1, .num2, .num3, .num4, .num5 {
+div.num {
     margin-left: 22px;
     margin-top: 25px;
     display: inline-block;
@@ -62,16 +62,18 @@ div.num1, .num2, .num3, .num4, .num5 {
     border-radius: 50px;
 }
 
-div.num1:hover, .num2:hover, .num3:hover, .num4:hover, .num5:hover {
+div.num:hover {
     background-color: rgba(240, 248, 255, 0.446);
     color:  white;
     cursor: pointer;
 }
 
-input:checked + .num1 {
+input:checked + .num {
     background-color: hsl(25, 97%, 53%);
     color: blueviolet;
 }
+
+
 
 
 svg {
