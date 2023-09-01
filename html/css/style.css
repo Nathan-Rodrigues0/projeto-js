@@ -16,7 +16,7 @@ div.principal {
     background: radial-gradient( farthest-corner at 250px 1px , hsla(216, 12%, 54%, 0.379), hsl(213, 19%, 18% )30%), hsl(216, 12%, 8%) ;
     width: 500px;
     height: 550px;
-    margin: 220px auto;
+    margin: 200px auto;
     border-radius: 30px;
 }
 
@@ -32,6 +32,7 @@ p.texto {
    color: rgba(244, 244, 244, 0.698);
 } 
 
+
 p.enviar {
     background-color:hsl(25, 97%, 53%);
     margin: 45px auto;
@@ -45,12 +46,17 @@ p.enviar {
 
 p.enviar:hover {
     background-color: white;
+    cursor: pointer;
+}
+
+p.enviar:hover > .link-enviar {
+    background-color: white;
     color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
 
-div.num {
-    margin-left: 22px;
+.label  {
+    margin-left: 21px;
     margin-top: 25px;
     display: inline-block;
     background-color:  rgba(255, 255, 255, 0.089);
@@ -60,25 +66,37 @@ div.num {
     padding-top: 22px;
     text-align: center;
     border-radius: 50px;
+    border: none;
 }
 
-div.num:hover {
+.label:hover {
     background-color: rgba(240, 248, 255, 0.446);
     color:  white;
     cursor: pointer;
 }
 
-div.num:active {
+.label:active {
     background-color:  hsl(25, 97%, 53%);
 }
 
-input[type="checkbox"]:checked{
+fieldset input[type="radio"] {
     display: none;
+    border: none;
+}
+
+fieldset input[type="radio"]:checked + #lb{
     background-color:  hsl(25, 97%, 53%);
 }
 
-input {
-    dislay: none;
+
+button {
+    display: none;
+}
+
+fieldset {
+    width: 90px;
+    display: inline-flex;
+    border: none;
 }
 
 svg {
@@ -104,3 +122,20 @@ div.estrela {
     position: absolute;
     margin: 30px;
 }   
+
+a {
+    text-decoration: none;
+}
+
+a.link-enviar {
+    color: white;
+}
+
+footer, .p-footer {
+    margin-top: 200px;
+    font-size: 17px;
+}
+
+.resultado {
+    display: none;
+}
