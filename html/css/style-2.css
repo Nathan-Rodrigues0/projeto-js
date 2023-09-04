@@ -36,7 +36,7 @@ p.texto {
    line-height: 30px;
 } 
 
-div.selection {
+div.resultado {
     text-align: center;
     margin: 60px auto;
     background-color: rgba(255, 255, 255, 0.099);
@@ -62,7 +62,7 @@ a {
 
 a:hover {
     color:  hsl(25, 97%, 53%);
-    font-size: 17px;
+    font-size: 21px;
 }
 
 .p-footer { 

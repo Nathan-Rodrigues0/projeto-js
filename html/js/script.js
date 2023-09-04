@@ -1,19 +1,15 @@
-const number = document.querySelector(".numeros");
-const enviar = document.querySelector(".enviar");
-const span = document.querySelector("span");
-const agradecer = document.querySelector(".obrigado")
+var span = document.querySelector(".sp")
+var res = document.getElementsByClassName("resultado")
+
+function submit() {
+    var bola1 = document.getElementsByClassName("fiel1")
+    if (bola1) {  
+        bola1 = Number(bola1.value)
+        bola1 = 1  
+        res.innerHTML = `You selected ${bola1} out of 5 `
+    }
+    
+}
 
 
-number.addEventListener("click", (event) => {
-    var num = event.target;
-    num.style.backgroundColor = "rgba(240, 248, 255, 0.446)";
-    num.style.color = " hsl(25, 97%, 53%)";
-    span.textContent = num.innerText;
-});
-
-enviar.addEventListener("click", () => {
-    agradecer.style.display = "block";
-    setTimeout(() => {
-        agradecer.style.display = "none";
-    }, 3000);
-})
+    
