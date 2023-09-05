@@ -32,24 +32,25 @@ p.texto {
    color: rgba(244, 244, 244, 0.698);
 } 
 
-
-p.enviar {
+button.link-enviar {
     background-color:hsl(25, 97%, 53%);
+    color: white;
     margin: 45px auto;
-    padding-top: 20px;
+    display: block;
+    padding-top: 10px;
     text-align: center;
     width: 400px; 
-    height: 40px;
+    height: 50px;
     border-radius: 40px;
     font-size: 19px;
 }
 
-p.enviar:hover {
+button.link-enviar:hover {
     background-color: white;
     cursor: pointer;
 }
 
-p.enviar:hover > .link-enviar {
+div.enviar:hover > .link-enviar {
     background-color: white;
     color: hsl(25, 97%, 53%);
     cursor: pointer;
@@ -90,7 +91,8 @@ fieldset input[type="radio"]:checked + #lb{
 
 
 button {
-    display: none;
+   background-color: transparent;
+   border: none;
 }
 
 fieldset {
@@ -123,13 +125,13 @@ div.estrela {
     margin: 30px;
 }   
 
-a {
+/*a {
     text-decoration: none;
 }
 
 a.link-enviar {
     color: white;
-}
+}*/
 
 footer, .p-footer {
     margin-top: 200px;
