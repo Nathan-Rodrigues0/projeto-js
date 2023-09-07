@@ -4,13 +4,21 @@ const result = document.querySelector(".result");
 const main = document.querySelector(".main");
 const num = document.querySelector(".sp-number");
 
-submit.addEventListener("click", function () {
-  winow.location.href = "index-2.html";  
+submit.addEventListener("click", function () { 
   if (num.innerHTML) {
     main.classList.add("hidden");
     result.classList.remove("hidden");
-  }
+  };
 });
+
+submit.addEventListener("click", function () {
+  if (result.style.display === 'block'){
+    result.style.display = 'none'
+  } else {
+    result.style.display = 'block'
+    main.style.display = 'none'
+  };
+})
 
 button.forEach((number) =>  {
     number.addEventListener("click", function (e) {
@@ -18,5 +26,6 @@ button.forEach((number) =>  {
     num.innerHTML = n;
   });
 });
+
 
 
