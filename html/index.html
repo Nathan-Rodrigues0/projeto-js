@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
@@ -16,7 +16,7 @@
 </head>
 <body>
   <div class="container main">
-      <div class="estrela"><img src="images/icon-star.svg" alt=""></div>
+      <div class="estrela"><img class="img-estrela" src="images/icon-star.svg" alt=""></div>
         
       <h2>How did we do?</h2>
 
@@ -34,14 +34,18 @@
         </div>
       
         <div>
-          <button class="submit">S U B M I T</button>
+          <button class="submit" onclick="display('result')">S U B M I T</button>
         </div>
     </div>
 
    <div class="container result hidden">
-    <img src="images/illustration-thank-you.svg" alt="">
-    <p>You selected <span class="number">0</span> out of 5</p>
+
+    <img class="img-thank" src="images/illustration-thank-you.svg" alt="">
+
+    <p class="p-result">You selected <span class="sp-number">0</span> out of 5</p>
+
     <h1>Thank you!</h1>
+
     <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
    </div>
 
