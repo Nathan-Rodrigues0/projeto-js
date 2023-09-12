@@ -23,6 +23,7 @@ submit.addEventListener("click", function () {
 button.forEach((number) =>  {
     number.addEventListener("click", function (e) {
     const n = e.target.dataset.key;
+    //alvo de um conjjunto de dados 
     num.innerHTML = n;
   });
 });
