@@ -160,7 +160,9 @@ p.p-result {
 
 @media(max-width: 550px) {
     div.main, div.result {
-        width: 450px;
+        margin: 65px auto;
+        width: 350px;
+        height: 650px;
     }
 
     img.img-exit {
@@ -168,6 +170,19 @@ p.p-result {
     }
 
     .number-button {
-       margin-left: 10px;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .number {
+        margin: auto;
+        width: 300px;
+        transform: scale(0.9);
+        text-align: center;
+    }
+
+   button.submit {
+        width: 250px;
     }
     }
