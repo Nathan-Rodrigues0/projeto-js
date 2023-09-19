@@ -7,6 +7,7 @@ const num = document.querySelector(".sp-number");
 submit.addEventListener("click", function () { 
   if (num.innerHTML) {
     main.classList.add("hidden");
+    //classList = é uma propriedade que retorna uma coleção e ativa atributos de (classe) do elemento.
     result.classList.remove("hidden");
   };
 });
